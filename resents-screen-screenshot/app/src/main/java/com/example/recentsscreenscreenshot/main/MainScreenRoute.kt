@@ -4,7 +4,7 @@ import androidx.compose.runtime.Composable
 
 @Composable
 fun MainScreenRoute(
-    OnOpenAppClicked :() -> Unit
+    OnOpenInsecureActivityClicked :() -> Unit
 ){
-    MainScreen(OnOpenAppClick = OnOpenAppClicked)
+    MainScreen(OnOpenInsecureActivityClick = OnOpenInsecureActivityClicked)
 }

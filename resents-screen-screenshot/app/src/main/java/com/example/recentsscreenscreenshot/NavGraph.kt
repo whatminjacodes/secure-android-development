@@ -18,7 +18,7 @@ object Destinations {
 fun NavGraph(navController: NavHostController = rememberNavController()) {
     NavHost(navController = navController, startDestination = MAIN_SCREEN_ROUTE) {
         composable(MAIN_SCREEN_ROUTE) {
-            MainScreenRoute(OnOpenAppClicked = {
+            MainScreenRoute(OnOpenInsecureActivityClicked = {
                 navController.navigate(START_SCREEN_ROUTE)
             })
         }
