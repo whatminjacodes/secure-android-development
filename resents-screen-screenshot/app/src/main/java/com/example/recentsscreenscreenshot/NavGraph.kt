@@ -11,21 +11,21 @@ import com.example.recentsscreenscreenshot.main.MainScreenRoute
 import com.example.recentsscreenscreenshot.start.StartScreenRoute
 
 object Destinations {
-    const val START_SCREEN_ROUTE = "start"
     const val MAIN_SCREEN_ROUTE = "main"
+    const val START_SCREEN_ROUTE = "start"
 }
 @Composable
 fun NavGraph(navController: NavHostController = rememberNavController()) {
-    NavHost(navController = navController, startDestination = START_SCREEN_ROUTE) {
-        composable(START_SCREEN_ROUTE) {
-            StartScreenRoute(OnOpenAppClicked = {
-                navController.navigate(MAIN_SCREEN_ROUTE)
+    NavHost(navController = navController, startDestination = MAIN_SCREEN_ROUTE) {
+        composable(MAIN_SCREEN_ROUTE) {
+            MainScreenRoute(OnOpenAppClicked = {
+                navController.navigate(START_SCREEN_ROUTE)
             })
         }
 
-        composable(MAIN_SCREEN_ROUTE){
+        composable(START_SCREEN_ROUTE){
             val message  = "message from start screen"
-            MainScreenRoute(messageFromStart = message!!)
+            StartScreenRoute(messageFromStart = message!!)
         }
     }
 }
