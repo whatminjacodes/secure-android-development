@@ -1,4 +1,4 @@
-package com.example.recentsscreenscreenshot.start
+package com.example.recentsscreenscreenshot.insecure
 
 import androidx.compose.runtime.Composable
 

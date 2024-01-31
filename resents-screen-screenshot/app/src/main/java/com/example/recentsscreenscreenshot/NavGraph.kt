@@ -8,7 +8,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.recentsscreenscreenshot.Destinations.MAIN_SCREEN_ROUTE
 import com.example.recentsscreenscreenshot.Destinations.START_SCREEN_ROUTE
 import com.example.recentsscreenscreenshot.main.MainScreenRoute
-import com.example.recentsscreenscreenshot.start.StartScreenRoute
+import com.example.recentsscreenscreenshot.insecure.StartScreenRoute
 
 object Destinations {
     const val MAIN_SCREEN_ROUTE = "main"

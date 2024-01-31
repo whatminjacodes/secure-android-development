@@ -6,5 +6,5 @@ import androidx.compose.runtime.Composable
 fun MainScreenRoute(
     OnOpenInsecureActivityClicked :() -> Unit
 ){
-    MainScreen(OnOpenInsecureActivityClick = OnOpenInsecureActivityClicked)
+    MainScreen()
 }

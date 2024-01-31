@@ -25,9 +25,7 @@ import androidx.compose.ui.unit.sp
 import com.example.recentsscreenscreenshot.ui.theme.Purple40
 
 @Composable
-fun MainScreen(
-    OnOpenInsecureActivityClick: () -> Unit
-) {
+fun MainScreen() {
     Surface(
         modifier = Modifier.fillMaxWidth(),
     ) {
@@ -58,18 +56,24 @@ fun MainScreen(
 
             Spacer(modifier = Modifier.height(20.dp))
 
+            Text(
+                "Click the button below to open insecure activity.",
+                style = TextStyle(
+                    fontSize = 16.sp,
+                    textAlign = TextAlign.Center
+                ),
+                modifier = Modifier.padding(30.dp)
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
             OutlinedButton(
-                onClick = { OnOpenInsecureActivityClick() },
+                onClick = {  },
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF2EDC83),),
                 border = BorderStroke(1.dp, color = Color.Black)
             ) {
-                Text(text = "Open the app")
+                Text(text = "Open insecure activity")
             }
         }
     }
-}
-@Preview
-@Composable
-fun PreviewStart(){
-    MainScreen(OnOpenInsecureActivityClick= { /* TODO */})
 }
