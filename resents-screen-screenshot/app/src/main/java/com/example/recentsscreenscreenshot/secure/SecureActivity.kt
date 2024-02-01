@@ -1,5 +1,6 @@
 package com.example.recentsscreenscreenshot.secure
 
+import android.os.Build
 import android.os.Bundle
 import android.view.WindowManager
 import androidx.activity.ComponentActivity
@@ -27,12 +28,17 @@ class SecureActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        window.setFlags(
-            WindowManager.LayoutParams.FLAG_SECURE,
-            WindowManager.LayoutParams.FLAG_SECURE
-        )
-
-        //setRecentsScreenshotEnabled(false)
+        // Check if Android 13 or newer
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            // If Android 13 or newer
+            setRecentsScreenshotEnabled(false)
+        } else {
+            // Earlier versions
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_SECURE,
+                WindowManager.LayoutParams.FLAG_SECURE
+            )
+        }
 
         setContent {
             RecentsScreenScreenshotTheme() {
