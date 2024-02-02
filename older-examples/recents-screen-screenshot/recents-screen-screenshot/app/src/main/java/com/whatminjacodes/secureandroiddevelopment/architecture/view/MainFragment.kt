@@ -6,17 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.Observer
-import com.whatminjacodes.secureandroiddevelopment.architecture.viewmodel.MainViewModel
+import com.whatminjacodes.secureandroiddevelopment.InsecureActivity
 import com.whatminjacodes.secureandroiddevelopment.databinding.FragmentMainBinding
-import com.whatminjacodes.secureandroiddevelopment.secureversion.SecureActivity
+import com.whatminjacodes.secureandroiddevelopment.SecureActivity
 
 
 /*
  *      MainFragment
- *      - shows the UI
- *      - listens to viewModel for updates on UI
+ *      - has buttons to secure and insecure activity examples
  */
 class MainFragment: Fragment() {
 
@@ -24,8 +21,6 @@ class MainFragment: Fragment() {
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
-    // Create a viewModel
-    private val viewModel: MainViewModel by activityViewModels()
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -42,7 +37,6 @@ class MainFragment: Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setupClickListeners()
-        fragmentTextUpdateObserver()
     }
 
     override fun onDestroyView() {
@@ -52,15 +46,13 @@ class MainFragment: Fragment() {
 
     // Setup the button in our fragment to call getUpdatedText method in viewModel
     private fun setupClickListeners() {
-        binding.fragmentButton.setOnClickListener { viewModel.getUpdatedText() }
+        binding.openInSecureActivityButton.setOnClickListener { openInsecureActivity() }
         binding.openSecureActivityButton.setOnClickListener { openSecureActivity() }
     }
 
-    // Observer is waiting for viewModel to update our UI
-    private fun fragmentTextUpdateObserver() {
-        viewModel.uiTextLiveData.observe(viewLifecycleOwner, Observer { updatedText ->
-            binding.fragmentTextView.text = updatedText
-        })
+    private fun openInsecureActivity() {
+        val intent = Intent(activity, InsecureActivity::class.java)
+        startActivity(intent)
     }
 
     private fun openSecureActivity() {

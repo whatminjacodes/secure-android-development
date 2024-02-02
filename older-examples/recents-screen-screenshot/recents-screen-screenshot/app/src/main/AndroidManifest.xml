@@ -3,7 +3,7 @@
     package="com.whatminjacodes.secureandroiddevelopment">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.whatminjacodes.secureandroiddevelopment.secureversion.SecureActivity"/>
+        <activity android:name="com.whatminjacodes.secureandroiddevelopment.SecureActivity"/>
+        <activity android:name="com.whatminjacodes.secureandroiddevelopment.InsecureActivity"/>
     </application>
 
 </manifest>

@@ -9,61 +9,35 @@
         android:id="@+id/fragmentTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You have just opened a fragment!"
+        android:text="Example app that shows how to hide views from Recents screen."
         android:textSize="24sp"
+        android:textAlignment="center"
         android:padding="20dp"
-        app:layout_constraintBottom_toTopOf="@id/fragmentButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/fragmentButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Update text"
+        android:layout_marginTop="80dp"
         app:layout_constraintBottom_toTopOf="@id/openInSecureActivityButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentTextView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/openInSecureActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open insecure activity"
+        android:layout_marginTop="20dp"
         app:layout_constraintBottom_toTopOf="@id/openSecureActivityButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentButton" />
+        app:layout_constraintTop_toBottomOf="@id/fragmentTextView" />
 
     <Button
         android:id="@+id/openSecureActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Open secure activity"
-        app:layout_constraintBottom_toTopOf="@id/openInSecureFragmentButton"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/openInSecureActivityButton" />
 
-    <Button
-        android:id="@+id/openInSecureFragmentButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open insecure fragment"
-        app:layout_constraintBottom_toTopOf="@id/openSecureFragmentButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/openSecureActivityButton" />
-
-    <Button
-        android:id="@+id/openSecureFragmentButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Open secure fragment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/openInSecureFragmentButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
