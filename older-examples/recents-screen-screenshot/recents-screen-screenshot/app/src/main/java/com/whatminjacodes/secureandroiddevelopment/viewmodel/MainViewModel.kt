@@ -1,8 +1,8 @@
-package com.minjee.basicmvvmexample.viewmodel
+package com.whatminjacodes.secureandroiddevelopment.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.minjee.basicmvvmexample.model.DataModel
+import com.whatminjacodes.secureandroiddevelopment.model.DataModel
 
 /*
  *      MainViewModel

@@ -1,4 +1,4 @@
-package com.minjee.basicmvvmexample
+package com.whatminjacodes.secureandroiddevelopment
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.minjee.basicmvvmexample.view
+package com.whatminjacodes.secureandroiddevelopment.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
-import com.minjee.basicmvvmexample.R
-import com.minjee.basicmvvmexample.databinding.FragmentMainBinding
-import com.minjee.basicmvvmexample.viewmodel.MainViewModel
+import com.whatminjacodes.secureandroiddevelopment.databinding.FragmentMainBinding
+import com.whatminjacodes.secureandroiddevelopment.viewmodel.MainViewModel
 
 /*
  *      MainFragment

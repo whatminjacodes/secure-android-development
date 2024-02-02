@@ -1,10 +1,10 @@
-package com.minjee.basicmvvmexample.view
+package com.whatminjacodes.secureandroiddevelopment.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
-import com.minjee.basicmvvmexample.R
+import com.whatminjacodes.secureandroiddevelopment.R
 
 /*
  *      MainActivity
