@@ -1,0 +1,39 @@
+# Gradle files
+recents-screen-screenshot/.gradle/
+recents-screen-screenshot/build/
+recents-screen-screenshot/app/build/
+
+# Local configuration file (sdk path, etc)
+recents-screen-screenshot/local.properties
+
+# Log/OS Files
+recents-screen-screenshot/*.log
+
+# Android Studio generated files and folders
+recents-screen-screenshot/captures/
+recents-screen-screenshot/.externalNativeBuild/
+recents-screen-screenshot/.cxx/
+recents-screen-screenshot/*.apk
+recents-screen-screenshot/output.json
+
+# IntelliJ
+recents-screen-screenshot/*.iml
+recents-screen-screenshot/.idea/
+recents-screen-screenshot/smisc.xml
+recents-screen-screenshot/deploymentTargetDropDown.xml
+recents-screen-screenshot/render.experimental.xml
+
+# Keystore files
+recents-screen-screenshot/*.jks
+recents-screen-screenshot/*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+recents-screen-screenshot/google-services.json
+
+# Android Profiling
+recents-screen-screenshot/*.hprof
+
+recents-screen-screenshot/.DS_Store
+
+# Secrets
+recents-screen-screenshot/secrets.properties
