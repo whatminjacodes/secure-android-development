@@ -1,8 +1,8 @@
-package com.whatminjacodes.secureandroiddevelopment.viewmodel
+package com.whatminjacodes.secureandroiddevelopment.architecture.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.whatminjacodes.secureandroiddevelopment.model.DataModel
+import com.whatminjacodes.secureandroiddevelopment.architecture.model.DataModel
 
 /*
  *      MainViewModel

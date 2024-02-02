@@ -1,4 +1,4 @@
-package com.whatminjacodes.secureandroiddevelopment.view
+package com.whatminjacodes.secureandroiddevelopment.architecture.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

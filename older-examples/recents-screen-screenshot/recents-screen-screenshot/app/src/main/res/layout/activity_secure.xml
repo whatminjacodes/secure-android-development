@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/secureActivityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a secure activity!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toTopOf="@id/secureActivityText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/secureActivityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Here could be some sensitive information, such as emails, phone numbers, addresses and such, visible."
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/secureActivityText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secureActivityTitle" />
+
+    <TextView
+        android:id="@+id/secureActivityText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This activity hides the view when the app is minimized."
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@id/secureActivityText2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secureActivityTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
