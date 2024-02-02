@@ -14,12 +14,8 @@ class SecureActivity : AppCompatActivity(R.layout.activity_secure) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Check if Android 13 or newer
-       /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            // If Android 13 or newer
-            setRecentsScreenshotEnabled(false)
-        } else {*/
-            // Earlier versions
+            // Treats the content of the window as secure, preventing it from appearing
+            // in screenshots or from being viewed on non-secure displays
             window.setFlags(
                 WindowManager.LayoutParams.FLAG_SECURE,
                 WindowManager.LayoutParams.FLAG_SECURE

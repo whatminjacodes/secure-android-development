@@ -10,7 +10,6 @@ import com.whatminjacodes.secureandroiddevelopment.InsecureActivity
 import com.whatminjacodes.secureandroiddevelopment.databinding.FragmentMainBinding
 import com.whatminjacodes.secureandroiddevelopment.SecureActivity
 
-
 /*
  *      MainFragment
  *      - has buttons to secure and insecure activity examples
